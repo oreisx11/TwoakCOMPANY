@@ -1,0 +1,296 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #121212; /* preto puxado pro cinza escuro */
+    color: #e0e0e0;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+/* Navbar */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: rgba(20, 20, 20, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    z-index: 999;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo img {
+    height: 80px; 
+    width: auto;
+    filter: none;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.funcionalidades {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.funcionalidades button {
+    background: transparent;
+    border: 2px solid #888;
+    color: #ddd;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.funcionalidades button:hover {
+    background: #5a5a5a;
+    border-color: green;
+    color: white;
+    box-shadow: 0 0 10px green;
+}
+
+/* Conteúdo principal */
+.somos {
+    max-width: 900px;
+    margin: 4rem 1.5rem 2rem;
+    background: #1e1e1e;
+    padding: 2.5rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    transition: background 0.3s ease;
+}
+
+.somos:hover {
+    background: #2c2c2c;
+}
+
+.somos h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #f0f0f0;
+    border-left: 6px solid #4caf50;
+    padding-left: 1rem;
+    letter-spacing: 1px;
+}
+
+.somos p {
+    font-size: 1.15rem;
+    color: #ccc;
+    white-space: pre-line; /* mantem as quebras do texto */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .funcionalidades {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .somos {
+        margin: 3rem 1rem 2rem;
+        padding: 2rem;
+    }
+
+    .somos h1 {
+        font-size: 2.2rem;
+    }
+
+    .somos p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .funcionalidades button {
+        font-size: 0.9rem;
+        padding: 0.4rem 0.9rem;
+    }
+}
+
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    max-width: 650px;
+    margin: 3rem auto;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #1a1a1a;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.carrossel-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.slide.ativo {
+    display: block;
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.slide p {
+    color: #ccc;
+    font-size: 1.1rem;
+}
+
+.botoes-carrossel {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.botoes-carrossel button {
+    background: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.botoes-carrossel button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.tecnologia {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.tecnologia h2 {
+  display: inline-block;
+  border-bottom: 5px solid green;
+  padding-bottom: 14px;
+}
+
+
+.icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* espaço entre os ícones */
+  flex-wrap: wrap; /* quebra para linha de baixo se necessário */
+  margin-top: 20px;
+}
+
+.icone img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.icone img:hover {
+  transform: scale(1.1); /* efeito ao passar o mouse */
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.3em;
+}
+
+.card p {
+  padding: 0 15px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.card a:hover {
+  background-color: #218838;
+}
+
+h3 {
+    color: #218838;
+}
