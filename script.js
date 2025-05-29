@@ -14,3 +14,18 @@
 
   // Mostrar primeiro slide ao carregar
   window.addEventListener("load", () => mostrarSlide(slideAtual));
+
+
+  // Mostrar primeiro slide ao carregar LEO 28/05
+  const acc = document.querySelectorAll(".accordion");
+  acc.forEach(button => {
+    button.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
