@@ -1,0 +1,99 @@
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    .funcionalidades {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.8rem;
+    }
+
+    .funcionalidades button {
+        padding: 0.5rem 1rem;
+        font-size: 0.95rem;
+    }
+
+    .somos {
+        margin: 3rem 1rem 2rem;
+        padding: 2rem;
+    }
+
+    .somos h1 {
+        font-size: 2.2rem;
+    }
+
+    .somos p {
+        font-size: 1rem;
+    }
+
+    .carrossel {
+        max-width: 95%;
+        margin: 2rem auto;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .rodape {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px 15px;
+    }
+
+    .coluna-rodape {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        height: 50px;
+    }
+
+    .funcionalidades button {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .tecnologia h2 {
+        font-size: 1.5rem;
+    }
+
+    .icone img {
+        width: 60px;
+    }
+
+    .slide p {
+        font-size: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.1em;
+    }
+
+    .card p {
+        font-size: 0.9em;
+    }
+
+    .card a {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+}
