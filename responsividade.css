@@ -51,15 +51,17 @@
     }
 
     .rodape {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 30px 15px;
+        flex-direction: column; 
+        /* text-align: center; */
+        /* padding: 30px 15px; */
+        width: 100%;
     }
 
     .coluna-rodape {
         margin: 10px 0;
     }
+
+
 }
 
 @media (max-width: 480px) {
@@ -95,5 +97,14 @@
     .card a {
         font-size: 0.9em;
         padding: 6px 12px;
+    }
+
+    .rodape {
+        padding: 7px 40px
+    }
+
+    .coluna-rodape {
+        max-width: 90%;
+        margin-bottom: 20px;
     }
 }

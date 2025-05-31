@@ -13,7 +13,8 @@
     <!--Cabeçalho-->
     <header>
         <div class="logo">
-            <img src="imagens/vectorlogo/logo.png" alt="logoTwoak">
+            <img src="imagens/vectorlogo/folha.png" alt="logoTwoak">
+            <h1 id="titulo-pagina">TWOAK COMPANY</h1>
         </div>
         <div class="funcionalidades">
             <button>como funciona</button>
@@ -53,7 +54,7 @@
     </div>
 
     <!--2º DIV SOMOS--> 
-    <div class="somos">
+    <div class="somos" id="link-cards">
       <h1>Vai um sistema ae?</h1>
       <p>"Os valores apresentados são apenas estimativas médias. Para um orçamento personalizado, entre em contato conosco — teremos o prazer de atendê-lo sem compromisso!"</p>
     </div>
@@ -65,6 +66,7 @@
           <h3>Sites Online Empresarial</h3>
           <p>Crie uma presença online profissional para seu estabelecimento.</p>
           <a href="#">R$399,99+</a>
+          <p><a href="#somos-invertidos" class="link">Detalhes</a></p>
         </div>
 
         <div class="card">
@@ -97,13 +99,104 @@
     </div>
 
 
+      <!-- Oque tem em cada projeto(caixa de texto invertida de cores) 
+      <div id="somos-invertidos" class="somos">
+        <h1>Detalhamento dos Projetos</h1>
+        <p class="subtitle">O que está incluso no básico e o que são funcionalidades extras.</p    >
+        <br>
+        <p class="subtitle">Site Empresarial</p>
+        <div class="panel">
+          <strong>Básico:</strong>
+          <p>+ Responsividade</p>
+          <p>+ Página institucional</p>
+          <p>+ Cadastro de Clientes</p>
+          <p>+ Banco de Dados</p>
+          <p>+ Acesso Admin</p>
+      
+          <strong>Funcionalidades extras:</strong>
+          <p>+ Cadastro de Funcionários - R$100</p>
+          <p>+ Painel de Controle (Dashboard) - R$200</p>
+          <p>+ Formulário de Contato funcional - R$100</p>
+          <p>+ Integração com Redes Sociais - R$80</p>
+          <p>+ Botão WhatsApp ou Chat - R$70</p>
+          <p>+ Otimização para Google (SEO) - R$150</p>
+          <p>+ Google Maps - R$60</p>
+        </div>
+      
+        <br>
+        <p class="subtitle">Cardápio Online</p>
+        <div class="panel">
+          <strong>Básico:</strong>
+          <p>+ Responsividade</p>
+          <p>+ QR Code</p>
+          <p>+ Link Compartilhável</p>
+      
+          <strong>Funcionalidades extras:</strong>
+          <p>+ Painel Admin para edição - R$150</p>
+          <p>+ Categorias de Produtos - R$80</p>
+          <p>+ Imagens dos Produtos - R$70</p>
+          <p>+ Organização por Destaque - R$50</p>
+          <p>+ Notificações para Cozinha - R$100</p>
+        </div>
+      
+        <br>
+        <p class="subtitle">Sistema de Estoque</p>
+        <div class="panel">
+          <strong>Básico:</strong>
+          <p>+ Responsividade</p>
+          <p>+ Cadastro de Produtos</p>
+          <p>+ Banco de Dados</p>
+          <p>+ Acesso Admin</p>
+      
+          <strong>Funcionalidades extras:</strong>
+          <p>+ Cadastro de Funcionários com Permissões - R$150 </p>
+          <p>+ Controle de Entradas e Saídas - R$200</p>
+          <p>+ Alerta de Estoque Baixo - R$80</p>
+          <p>+ Relatórios em PDF ou Excel - R$150</p>
+          <p>+ Busca Avançada e Filtros - R$100</p>
+          <p>+ Histórico de Movimentações - R$120</p>
+        </div>
+      
+        <br>
+        <p class="subtitle">Portfólio Profissional</p>
+        <div class="panel">
+          <strong>Básico:</strong>
+          <p>+ Responsividade</p>
+          <p>+ Página “Sobre Mim”</p>
+          <p>+ Linkamento de Redes</p>
+      
+          <strong>Funcionalidades extras:</strong>
+          <p>+ Galeria de Projetos - R$100</p>
+          <p>+ Design Exclusivo - R$150</p>
+          <p>+ Blog ou Notícias - R$120</p>
+          <p>+ Página de Serviços - R$80</p>
+          <p>+ Formulário de Contato - R$70</p>
+        </div>
+      
+        <br>
+        <p class="subtitle">Automatização de Tarefas</p>
+        <div class="panel">
+          <strong>Básico:</strong>
+          <p>+ Responsividade</p>
+          <p>+ Agendamento Simples</p>
+      
+          <strong>Funcionalidades extras:</strong>
+          <p>+ Integração com APIs (Google Sheets, WhatsApp) - R$200 a 400</p>
+          <p>+ Painel de Regras - R$150</p>
+          <p>+ Relatórios Automáticos - R$120</p>
+          <p>+ Fluxos Condicionais - R$180</p>
+          <p>+ Dashboard de Execuções - R$150</p>
+        </div>
+      </div> -->
+
     <!--Oque tem em cada projeto(caixa de texto invertida de cores) --> 
-    <div id="somos-invertidos" class="somos">
+    <section class="somos" id="somos-invertidos">
+      <!-- <div> -->
       <h1>Detalhamento dos Projetos</h1>
       <p class="subtitle">O que está incluso no básico e o que são funcionalidades extras.</p    >
-       <br>
-       <p class="subtitle">Site Empresarial</p>
+
        <div class="panel">
+         <p class="title-interno">Site empresarial</p>
          <strong>Básico:</strong>
          <p>+ Responsividade</p>
          <p>+ Página institucional</p>
@@ -120,10 +213,9 @@
          <p>+ Otimização para Google (SEO) - R$150</p>
          <p>+ Google Maps - R$60</p>
        </div>
-     
-       <br>
-       <p class="subtitle">Cardápio Online</p>
+       
        <div class="panel">
+         <p class="title-interno">Cardápio Online</p>
          <strong>Básico:</strong>
          <p>+ Responsividade</p>
          <p>+ QR Code</p>
@@ -137,9 +229,8 @@
          <p>+ Notificações para Cozinha - R$100</p>
        </div>
      
-       <br>
-       <p class="subtitle">Sistema de Estoque</p>
        <div class="panel">
+         <p class="title-interno">Sistema de Estoque</p>
          <strong>Básico:</strong>
          <p>+ Responsividade</p>
          <p>+ Cadastro de Produtos</p>
@@ -155,9 +246,9 @@
          <p>+ Histórico de Movimentações - R$120</p>
        </div>
      
-       <br>
-       <p class="subtitle">Portfólio Profissional</p>
        <div class="panel">
+         <p class="title-interno">Portfólio Profissional</p>
+
          <strong>Básico:</strong>
          <p>+ Responsividade</p>
          <p>+ Página “Sobre Mim”</p>
@@ -170,10 +261,9 @@
          <p>+ Página de Serviços - R$80</p>
          <p>+ Formulário de Contato - R$70</p>
        </div>
-     
-       <br>
-       <p class="subtitle">Automatização de Tarefas</p>
+    
        <div class="panel">
+         <p class="title-interno">Automatização de Tarefas</p>
          <strong>Básico:</strong>
          <p>+ Responsividade</p>
          <p>+ Agendamento Simples</p>
@@ -185,7 +275,7 @@
          <p>+ Fluxos Condicionais - R$180</p>
          <p>+ Dashboard de Execuções - R$150</p>
        </div>
-     </div>
+    </section>
 
     <!--CARROSEL DE PROJETOS(Adicionar projetos reais fazer troca mas pra frente)-->
     <div class="carrossel">
@@ -210,8 +300,22 @@
     </div>
 
 
-<!--Nossos Portifólios e apresentação-->
+    <!--Nossos Portifólios e apresentação-->
+    <section class="somos" id="somos-maior">
+      <h1>Lorem psium</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, magni vitae ipsa optio quidem vero voluptate! Ipsam, aliquid l
+        nsectetur adipisicing elit. Soluta, magni vitae ipsa optio quidem vero voluptate! Ipsam, aliquid l
+      </p>
 
+      <div class="cards-portifolio">
+        <div> 
+          <!-- <img src="/imagens/vectorlogo/folha.png" alt="2px"> -->
+        </div>
+        <h1 class="titulo-portifolio">Leo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aut eaque iure. Impedit, earum? Quae nostrum ea expedita modi harum</p>
+        <button>ipeipwqhfhpwq</button>
+      </div>
+    </section>
 
     <!-- RODAPE DO SITE -->
     <footer class="rodape">
@@ -229,15 +333,20 @@
         <div class="coluna-rodape">
           <h3>Serviços</h3>
           <ul>
-            <li>Desenvolvimento</li>
-            <li>Design</li>
-            <li>Suporte</li>
+            <li><a href="#link-cards">Site Empresarial</a></li>
+            <li><a href="#link-cards">Cardapio Online + QrCode</a></li>
+            <li><a href="#link-cards">Sistema de Estoque</a></li>
+            <li><a href="#link-cards">Portifólio Profissional</a></li>
+            <li><a href="#link-cards">Automatização de tarefas</a></li>
           </ul>
         </div>
       
         <div class="coluna-rodape">
           <h3>Fale conosco</h3>
           <ul>
+            <li>Email: TwoakCompany@outlook.com</li>
+            <li>Telefone: (11) 97062-9125</li>
+            <br>
             <li>Email: TwoakCompany@outlook.com</li>
             <li>Telefone: (11) 97062-9125</li>
           </ul>
