@@ -434,5 +434,25 @@ h3 {
 }
 
 .coluna-rodape a:hover {
-  color: #00ccff;
+  color: #218838;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap; 
+  padding: 20px;
+}
+
+#nomes {
+    color: #383737;
+    text-align: center;
+}
+
+.icon {
+  width: 200px !important;
+  height: 200px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
 }
