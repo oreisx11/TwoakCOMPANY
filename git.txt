@@ -1,5 +1,0 @@
-git pull origin master  #PUXAR PROJETO ATUALIZADO SEMPRE QUE SE MEXER                                                                                
-                                                                                               
-git add .    # SALVAR E ENVIAR                                                                                       
-git commit -m ""                                            
-git push origin master                                                                                         
