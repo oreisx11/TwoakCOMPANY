@@ -4,39 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POrtifolio Leonardo</title>
-    <link rel="stylesheet"  href="/style.css">
-    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet"  href="../style.css">
+    <link rel="stylesheet" href="../responsividade.css">
     <link rel="icon" type="img" href="/imagens/vectorlogo/folha.png">
 </head>
 <body>
 
     <!--Cabeçalho-->
     <header>
-        <div class="logo">
-            <img src="/imagens/vectorlogo/folha.png" alt="logoTwoak">
-            <h1 id="titulo-pagina">TWOAK COMPANY</h1>
-        </div>
-        <div class="funcionalidades">
-            <button>como funciona</button>
-            <button>contato</button>
-            <button>modelos</button>
-        </div>
+      <div class="logo" id="link-logo">
+        <img src="../imagens/vectorlogo/folha.png" alt="logoTwoak">
+        <h1 id="titulo-pagina">
+          <a href="../index.html" style="text-decoration: none; color: #4caf50;">TWOAK COMPANY</a>
+        </h1>
+      </div>
+      <div class="funcionalidades">
+        <button>
+          <a href="#link-divPortifolio" style="text-decoration: none; color: #fff;">
+            NÓS CONHEÇA
+          </a>
+        </button>
+        <button>
+          <a href="#link-rodape" style="text-decoration: none; color: #fff;">
+            CONTATOS
+          </a>
+        </button>
+        <button>
+          <a href="#link-cards" style="text-decoration: none; color: #fff;">
+            MODELOS
+          </a>
+        </button>
+      </div>
     </header>
 
     <!--DIV INICIAL SOMOS--> 
-    <section class="divPortifolio">
-      <img src="/imagens/leoIcon.png"  id="iconPortifolio">
+    <section class="divPortifolio" id="link-divPortifolio">
+      <img src="../imagens/leoIcon.png"  id="iconPortifolio">
       <div>
         <h1>Leonardo Machado arroyo</h1>
-        <h3>Integrante Full-Stack</h1>
+        <h3>Integrante Full-Stack</h3>
         <h4>Sobre mim</h4>
-        <p>Sou estudante com 17 anos ainda, porem tenho grande vontade de se inserir no mercado de back-end com força! Tenho habilidades tecnicas em linguagens atuais e outras que.</p>
+        <p>Sou estudante com 17 anos ainda, porem tenho grande vontade de se inserir no mercado de back-end com força! Tenho habilidades tecnicas em linguagens atuais e outras que busco desenvolver.</p>
         <h4>React Native</h4>
         <p>Aprendi nossões basicas do uso de typeScript para aplicarmos em meu TCC por mais de 1 ano.</p>
         <h4>Html, Css e Javascript</h4>
         <p>Estudei por minha parte por meses porem ainda falta amadurecimento.</p>
         <h4>PHP</h4>
         <p>Compreendi os conceitos de forma basica e seus uso com conexões e bancos de dados.</p>
+        </div>
     </section>
 
     <section class="area-projetos">
@@ -46,13 +61,13 @@
           <div class="cartao-projeto">
             <h3>Go 2 Work</h3>
             <p>Aplicativo de busca de emprego focalizado para pequenos negocios e jovens que acabaram de sair do ensino medio. Desenvolvido pela minha equipe Thinking Light como TCC de Etec.</p>
-            <img src="/imagens/prints/fotoGo2Work.jpg" id="print">
+            <img src="../imagens/prints/fotoGo2Work.jpg" id="print">
             <p>Link do codigo fonte: <a href="https://github.com/Thinking-Light-2025/Go-2-Work" style="color: #28a745; text-decoration: none;">Github</a> <br>
             <p>Baixar projeto: <a href="" style="color: #28a745; text-decoration: none;">Clique aqui!</a></p>
           </div>
           <div class="cartao-projeto">
             <h3>Projeto 2</h3>
-            <p>Breve descrição do segundo projeto.</p>
+            <p>Disponivel em breve.</p>
           </div>
         </div>
 
@@ -74,9 +89,9 @@
       </div>
       <div class="formas" id="formasZAP">
           <Button>
-            <a href="https://wa.me/5511992038075?text=Olá%20vim%20de%20seu%20portifólio%20da%20TwoakCompany%20e%20gostaria%20de%20conversar%20com%20você." target="_blank" style="text-decoration: none;" class="botao-whatsapp">
+            <a href="https://wa.me/5511992038075?text=Olá%20vim%20de%20seu%20portifólio%20da%20TwoakCompany%20e%20gostaria%20de%20conversar%20com%20você." target="_blank" style="text-decoration: none;">
                   Chamar no WhatsApp
-               </a>      
+            </a>      
           </Button>
       </div>
       </div>
@@ -108,10 +123,10 @@
         <h3>Fale conosco</h3>
         <ul>
           <li>Email: TwoakCompany@outlook.com</li>
-          <li>Telefone: (11) 97062-9125</li>
+          <li>Email: TwoakCompany@gmail.com</li>
           <br>
-          <li>Email: TwoakCompany@outlook.com</li>
-          <li>Telefone: (11) 97062-9125</li>
+          <li>Telefone Luan: (11) 97062-9125</li>
+          <li>Telefone Leo: (11) 99203-8075</li>
         </ul>
       </div>
     
@@ -123,7 +138,7 @@
           <li><a href="#">TikTok</a></li>
         </ul>
       </div>
-  </footer>
+    </footer>
 
 <script src="script.js"></script>
 </body>
