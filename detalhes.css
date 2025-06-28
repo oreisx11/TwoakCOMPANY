@@ -330,7 +330,7 @@ header {
 
 .card p {
     padding: 0 15px;
-    color: #555;
+    color: #218838;
     font-size: 0.95em;
 }
 
@@ -352,7 +352,7 @@ header {
 .card .link {
     font-size: 1rem;
     font-weight: 900;
-    color: #232323;
+    color: #218838;
     margin-top: 1rem;
 }
 
@@ -369,7 +369,7 @@ h3 {
 }
 
 .card::-webkit-scrollbar-thumb {
-    background-color: #444;
+    background-color: #218838;
     border-radius: 5px;
 }
 
