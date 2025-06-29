@@ -136,8 +136,8 @@
     }
 
     #iconPortifolio {
-        max-width: 300px;
-        max-height: 300px !important;
+        max-width: 100px;
+        max-height: 100px !important;
         align-items: center;
     }
 
@@ -151,7 +151,7 @@
 
     
     .divPortifolio div {
-        max-width: 600px;
+        max-width: 300px;
         /* background-color: #218838; */
         padding-left: 15px;
     }
@@ -181,6 +181,10 @@
     }
     .formas li {
         font-size: 1rem;
+    }
+
+    .carrossel {
+        max-width: 200px;
     }
 
 }
