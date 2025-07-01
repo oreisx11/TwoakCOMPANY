@@ -1,0 +1,185 @@
+/* Container principal */
+.contact-container {
+  max-width: 1100px;
+  margin: 50px auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Texto lado esquerdo */
+.contact-text {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.contact-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.contact-text p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #d8d8e0;
+}
+
+/* Formulário lado direito */
+.contact-form {
+  flex: 1 1 350px;
+  max-width: 600px; 
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 10px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.input-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group.full-width {
+  flex: 1 1 100%;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.required {
+  color: #e63946;
+  margin-left: 2px;
+}
+
+input {
+  padding: 10px 12px; /* Padding reduzido */
+  border: 1.5px solid #d8d8e0;
+  border-radius: 8px;
+  font-size: 0.95rem; /* Fonte levemente menor */
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: green;
+  box-shadow: 0 0 6px #8fd7ff88;
+}
+
+.btn-submit {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 12px 0; /* Padding reduzido */
+  width: 100%;
+  border-radius: 12px;
+  font-size: 1rem; /* Fonte levemente menor */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: green;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .input-group {
+    flex: 1 1 100%;
+  }
+
+  .contact-text {
+    max-width: 100%;
+  }
+
+  .contact-form {
+    max-width: 100%; /* Garante que o formulário ocupe a largura total em telas pequenas */
+  }
+}
+
+.linha-verde {
+  border: none;           /* tira a borda padrão */
+  height: 3px;            /* altura da linha */
+  background-color: #28a745; /* verde da Twoak */
+  margin: 20px 0;         /* espaçamento vertical */
+  border-radius: 2px;     /* borda arredondada opcional */
+}
+
+/* Responsivo aprimorado */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 16px;
+  }
+
+  .contact-text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .contact-text h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-text p {
+    font-size: 1.2rem;
+  }
+
+  .contact-form {
+    max-width: 100%;
+    padding: 20px 16px;
+  }
+
+  form {
+    gap: 16px;
+  }
+
+  .input-group {
+    flex: 1 1 100%;
+  }
+
+  .btn-submit {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-text p {
+    font-size: 1rem;
+  }
+
+  .btn-submit {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  input {
+    font-size: 0.9rem;
+    padding: 9px 10px;
+  }
+}

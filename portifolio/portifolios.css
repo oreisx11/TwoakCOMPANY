@@ -1,0 +1,329 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  transition: all 0.3s ease;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  padding: 15px 40px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#link-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+#link-logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+#titulo-pagina {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 1.8rem;
+  user-select: none;
+}
+
+.funcionalidades {
+  display: flex;
+  gap: 25px;
+  font-weight: 600;
+}
+
+.funcionalidades a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.funcionalidades a:hover,
+.funcionalidades a:focus {
+  background-color: #28a745;
+  color: #121212;
+  outline: none;
+  box-shadow: 0 0 8px #28a745;
+  transition: background-color 0.3s ease;
+}
+
+#entrar-contato {
+  background-color: #28a745;
+  color: #121212;
+  font-weight: 700;
+}
+
+#entrar-contato:hover {
+  background-color: #1f7a32;
+  color: #e0e0e0;
+}
+
+/* SEÇÃO PORTFÓLIO / SOBRE MIM */
+
+.divPortifolio {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 60px 40px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 960px;
+  box-shadow: 0 0 15px rgba(40, 167, 69, 0.5);
+}
+
+#iconPortifolio {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #28a745;
+  flex-shrink: 0;
+}
+
+.divPortifolio > div {
+  max-width: 650px;
+}
+
+.divPortifolio h1 {
+  font-size: 2.6rem;
+  color: #28a745;
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+
+.divPortifolio h3 {
+  font-size: 1.4rem;
+  margin-bottom: 18px;
+  color: #c8ffc8;
+  font-weight: 600;
+}
+
+.divPortifolio h4 strong {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.divPortifolio p {
+  font-size: 1.1rem;
+  color: #d0d0d0;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+/* FOOTER */
+.rodape {
+  background-color: #1c1c1c;
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  color: #bbb;
+  border-top: 3px solid #28a745;
+  user-select: none;
+}
+
+.coluna-rodape {
+  flex: 1 1 200px;
+  min-width: 220px;
+}
+
+.coluna-rodape h3 {
+  color: #28a745;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 1.1px;
+}
+
+.coluna-rodape ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.coluna-rodape ul li a {
+  color: #bbb;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+  transition: all 0.25s ease;
+}
+
+.coluna-rodape ul li a:hover,
+.coluna-rodape ul li a:focus {
+  color: #28a745;
+  border-bottom: 1px solid #28a745;
+  outline: none;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+  }
+
+  .funcionalidades {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .divPortifolio {
+    flex-direction: column;
+    padding: 40px 30px;
+    max-width: 90%;
+  }
+
+  .secao-tecnologias {
+    flex-direction: column;
+    padding: 40px 30px;
+  }
+
+  .imagem-notebook {
+    max-width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .rodape {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .coluna-rodape {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  #titulo-pagina {
+    font-size: 1.4rem;
+  }
+
+  .funcionalidades a {
+    font-size: 0.9rem;
+    padding: 5px 8px;
+  }
+
+  .divPortifolio h1 {
+    font-size: 1.8rem;
+  }
+
+  .divPortifolio h3 {
+    font-size: 1.1rem;
+  }
+
+  .divPortifolio p {
+    font-size: 1rem;
+  }
+
+  .icone {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icone img {
+    max-width: 45px;
+    max-height: 45px;
+  }
+}
+
+.linha-verde {
+  border: none;           /* tira a borda padrão */
+  height: 3px;            /* altura da linha */
+  background-color: #28a745; /* verde da Twoak */
+  margin: 20px 0;         /* espaçamento vertical */
+  border-radius: 2px;     /* borda arredondada opcional */
+}
+
+@media (max-width: 360px) {
+  header {
+    padding: 16px 20px;
+    gap: 16px;
+  }
+
+  .funcionalidades {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .funcionalidades a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  .divPortifolio {
+    padding: 30px 20px;
+  }
+
+  .divPortifolio h1 {
+    font-size: 1.6rem;
+  }
+
+  .divPortifolio h3 {
+    font-size: 1rem;
+  }
+
+  .divPortifolio p {
+    font-size: 0.95rem;
+  }
+
+  #iconPortifolio {
+    width: 140px;
+    height: 140px;
+  }
+
+  .rodape {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .coluna-rodape h3 {
+    font-size: 1.1rem;
+  }
+
+  .coluna-rodape ul li a {
+    font-size: 0.95rem;
+  }
+}
